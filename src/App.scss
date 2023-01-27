@@ -101,7 +101,8 @@ p {
 
 .btn {
   display: block;
-  padding: 0.5rem 1rem;
+  width: 100%;
+  padding: 0.4rem;
   font-size: var(--font-size-h5);
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -139,12 +140,14 @@ p {
 .form__main {
   background-color: whitesmoke;
   width: 300px;
+  max-width: 300px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2rem;
   box-shadow: 1px 0px 2px 1px #000;
+  border-radius: 0.2rem;
 }
 
 .form__control {
@@ -163,12 +166,17 @@ p {
 
 .form__input {
   display: block;
-  padding: 0.5rem 0.3rem;
+  padding: 0.3rem 0.2rem;
   border-radius: 0.2rem;
   border: 2px solid gray;
   margin-top: 0.2rem;
+  font-size: var(--font-size-h5);
 }
 
 .btn__submit {
   margin: 0;
+}
+
+.error {
+  color: red;
 }
